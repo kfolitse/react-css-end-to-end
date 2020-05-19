@@ -4,17 +4,37 @@
   "description": "CSS-React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js' ",
+    "lint:fix": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kfolitse/react-css-end-to-end.git"
   },
-  "keywords": ["React","CSS","Spinners"],
+  "keywords": [
+    "React",
+    "CSS",
+    "Spinners"
+  ],
   "author": "Amenyo Folitse",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kfolitse/react-css-end-to-end/issues"
   },
-  "homepage": "https://github.com/kfolitse/react-css-end-to-end#readme"
+  "homepage": "https://github.com/kfolitse/react-css-end-to-end#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "2.0.5",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }
