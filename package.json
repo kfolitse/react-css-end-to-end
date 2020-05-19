@@ -7,6 +7,14 @@
     "lint": "eslint '**/*.js' ",
     "lint:fix": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' "
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["npm run lint:fix","git add"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kfolitse/react-css-end-to-end.git"
@@ -33,6 +41,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.4",
     "prettier": "2.0.5",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0"
