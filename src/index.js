@@ -1,1 +1,1 @@
-console.log('Hello' + 'my' + 'friends Again-4 ')
+console.log('Hello' + 'my' + 'friends')
