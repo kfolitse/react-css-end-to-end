@@ -1,4 +1,1 @@
-// import React from 'react'
-// const Spinners = props => <h1>Spinners</h1>
-// export default Spinners
-console.log('Hello' + 'allo' + 'my friends' + 'Salamatou')
+import e from"react";export default function(r){return e.createElement("h1",null,"Spinners")}

@@ -1,6 +1,1 @@
-'use strict'
-
-// import React from 'react'
-// const Spinners = props => <h1>Spinners</h1>
-// export default Spinners
-console.log('Hello' + 'allo' + 'my friends' + 'Salamatou')
+"use strict";var e,t=(e=require("react"))&&"object"==typeof e&&"default"in e?e.default:e;module.exports=function(e){return t.createElement("h1",null,"Spinners")};
