@@ -1,3 +1,3 @@
-import React from 'react'
-const Spinners = props => <h1>Spinners</h1>
-export default Spinners
+export * from './Ball'
+export * from './Dual-ball'
+export * from './Ripple'
