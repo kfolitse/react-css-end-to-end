@@ -1,12 +1,20 @@
 const React = require('react')
 const ReactDOM = require('react-dom/server')
 const express = require('express')
-const { Ball } = require('react-css-end-to-end')
+const { Ball, DualBall, Ripple } = require('react-css-end-to-end')
 
 const port = 3000
 const app = express()
+const html = ReactDOM.renderToString(
+  React.createElement(
+    React.Fragment,
+    null,
+    React.createElement(Ball),
+    React.createElement(DualBall),
+    React.createElement(Ripple)
+  )
+)
 app.get('*', (req, res) => {
-  const html = ReactDOM.renderToString(React.createElement(Ball))
   res.send(`
   <!DOCTYPE html>
 <html lang="en">

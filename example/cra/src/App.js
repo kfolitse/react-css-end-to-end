@@ -1,8 +1,12 @@
 import React from 'react'
-import { DualBall } from 'react-css-end-to-end'
+import { DualBall, Ball, Ripple } from 'react-css-end-to-end'
 
-function App () {
-  return <DualBall />
-}
+const App = props => (
+  <>
+    <DualBall />
+    <Ball />
+    <Ripple />
+  </>
+)
 
 export default App
