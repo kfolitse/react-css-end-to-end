@@ -8,6 +8,9 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "eslint '**/*.{js,ts,jsx,tsx,vue}' ",
     "lint:fix": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' ",
     "storybook": "start-storybook -p 9001 -c storybook",
@@ -39,28 +42,32 @@
   },
   "homepage": "https://github.com/kfolitse/react-css-end-to-end#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
     "@babel/preset-react": "^7.9.4",
     "@storybook/addon-options": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
+    "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.13.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
     "lint-staged": "^10.2.4",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.10.5",
     "rollup-plugin-babel": "^4.4.0",
@@ -73,5 +80,10 @@
   },
   "engines": {
     "node": ">=8"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/mocks/styles.js"
+    }
   }
 }
