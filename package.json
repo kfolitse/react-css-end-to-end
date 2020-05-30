@@ -45,7 +45,7 @@
   "bugs": {
     "url": "https://github.com/kfolitse/react-css-end-to-end/issues"
   },
-  "homepage": "https://github.com/kfolitse/react-css-end-to-end#readme",
+  "homepage": "https://kfolitse.github.io/react-css-end-to-end",
   "devDependencies": {
     "@babel/core": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
